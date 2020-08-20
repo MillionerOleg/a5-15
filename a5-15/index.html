@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken-Bricken</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<style>
+    @font-face {
+        font-family: "OpenSans";
+        src: url('fonts/OpenSans-SemiBold.ttf');
+        font-weight: 600;
+    }
+
+    @font-face {
+    font-family: "OpenSans";
+    src: url('fonts/OpenSans-Bold.ttf');
+    font-weight: 700;
+    }
+
+    @font-face {
+        font-family: "OpenSans";
+        src: url('fonts/OpenSans-ExtraBold.ttf');
+        font-weight: 800;
+    }
+
+    .col {
+        background-color: rgb(33, 68, 145);
+        padding: 20px  0 20px 0;
+    }
+
+    .text {
+        display: flex;
+        width: 1000px;
+        height: 150px;
+        background-color: white;
+    }
+
+    .create, .swap {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        margin-top: 35px;
+        background-color: black;
+        width: 227px;
+        height: 57px;
+        color: blanchedalmond;
+        font-weight: 600;
+        font-family: "OpenSans", sans-serif;
+    }
+
+    .nowrap {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    button {
+        margin-left: 20px;
+        
+    }
+
+    p {
+        color: black;
+        font-weight: 700;
+        font-family: "OpenSans", sans-serif;
+        display: flex;
+        font-size: 20px;
+    }
+
+    body {
+        background-image: url('img/coco.jpg');
+    }
+
+    .buttons {
+      display: flex;  
+    }
+
+</style>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col col-2 d-flex justify-content-center flex-wrap">
+            <div class="var">
+                <p>Var 1</p>
+                <input type="text" size="30" class="var1" name="text" placeholder="Кто жил-был?">
+            </div>
+            <div class="var">
+                <p>Var 2</p>
+                <input type="text" size="30" class="var2" name="text" placeholder=".. да кто с ним жил-был?">
+            </div>
+            <div class="var">
+                <p>Var 3</p>
+                <input type="text" size="30" class="var3" name="text" placeholder="Была у них кто?">
+            </div>
+        </div>
+        <div class="col col-8 d-flex justify-content-center flex-wrap">
+            <div class="nowrap">
+                <div class="text"> </div>
+                <div class="buttons">
+                    <button class="create" type="submit">Создать текст</button>
+                    <button class="swap" type="submit">Заменить переменные</button>
+                </div>
+            </div>
+            <div class="speak">
+                <p>speaсh</p>
+                <input type="text" size="100" class="speaсh" name="text" placeholder="Что прокудахтала?">
+            </div>
+        </div>
+        <div class="col col-2 d-flex justify-content-center flex-wrap">
+            <div class="var">
+                <p>Var 4</p>
+                <input type="text" size="30" class="var4" name="text" placeholder="Что она снесла?">
+            </div>
+            <div class="var">
+                <p>Var 5</p>
+                <input type="text" size="30" class="var5" name="text" placeholder="Кто бежала?">
+            </div>
+            <div class="var">
+                <p>Var 6</p>
+                <input type="text" size="30" class="var6" name="text" placeholder="Чем задела?">
+            </div>
+        </div>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./script.js"></script>
+</body>
